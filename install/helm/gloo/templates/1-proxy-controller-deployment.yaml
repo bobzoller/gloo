@@ -7,8 +7,8 @@ kind: Deployment
 metadata:
   labels:
     app: gloo
-    gloo: gloo
-  name: gloo
+    gloo: proxy-controller
+  name: proxy-controller
   namespace: {{ .Release.Namespace }}
 spec:
   replicas: {{ .Values.gloo.deployment.replicas }}
